@@ -1,0 +1,7 @@
+[
+    { "id": 1, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png" },
+    { "id": 2, "name": "Hoodie", "price": 2300, "image": "/hoodie.png" },
+    { "id": 3, "name": "Plazu", "price": 2300, "image": "/plazu.png" },
+    { "id": 4, "name": "Jacket", "price": 2300, "image": "/jacket.png" }
+  ]
+  
