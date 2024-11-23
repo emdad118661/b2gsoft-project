@@ -47,8 +47,8 @@ const NavBar = () => {
                     <input
                         type="text"
                         placeholder="      Search"
-                        className="w-[242px] h-[35px] max-w-xs input rounded-3xl placeholder:text-[#1D1D1D]" />
-                    <svg className='absolute right-[297px]' width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        className="w-[242px] h-[35px] max-w-xs input rounded-3xl placeholder:text-[#1D1D1D] sm:block hidden" />
+                    <svg className='absolute md:right-[297px] top-2 right-[96px]' width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.6667 12.1666L14.6667 15.1666" stroke="#1D1D1D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M13.3333 7.83337C13.3333 4.51967 10.647 1.83337 7.33325 1.83337C4.01955 1.83337 1.33325 4.51967 1.33325 7.83337C1.33325 11.1471 4.01955 13.8334 7.33325 13.8334C10.647 13.8334 13.3333 11.1471 13.3333 7.83337Z" stroke="#1D1D1D" strokeWidth="1.5" strokeLinejoin="round" />
                     </svg>

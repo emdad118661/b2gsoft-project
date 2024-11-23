@@ -17,7 +17,7 @@ export default function ProductSlider() {
     };
 
     return (
-        <div className="relative max-w-[1280px] mx-auto">
+        <div className="relative md:max-w-[1280px] max-w-[328px] mx-auto">
             <div className="mb-4">
                 <h3 className="text-[19px] text-purple-700">
                     FEATURED PRODUCT
