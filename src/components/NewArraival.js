@@ -30,13 +30,13 @@ export default function ProductSlider() {
                 <div
                     className="flex gap-6 transition-transform duration-500"
                     style={{
-                        transform: `translateX(-${currentIndex * 100}%)`,
+                        transform: `translateX(-${currentIndex * 10}%)`,
                     }}
                 >
                     {products.map((product) => (
                         <div
                             key={product.id}
-                            className="flex-shrink-0 w-[302px] h-[400px] p-2 border rounded-lg"
+                            className="flex-shrink-0 w-[302px] bg-[#FFFFFF] h-[400px] p-2 border rounded-lg"
                         >
                             <div className="w-[286px] h-[287px] bg-gray-100 rounded-lg">
                                 {/* <Image
@@ -48,7 +48,7 @@ export default function ProductSlider() {
                 /> */}
                                 <Image src={product.image} alt={product.name} width={286} height={287} className="object-cover w-full rounded-md"></Image>
                             </div>
-                            <div className="flex justify-between my-4">
+                            <div className="flex justify-between h-[25px] my-4">
                                 <p className="text-[16px]">{product.name}</p>
                                 <p className="font-semibold text-[19px]">BDT {product.price}</p>
                             </div>

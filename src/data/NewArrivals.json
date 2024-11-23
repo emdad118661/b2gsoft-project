@@ -2,6 +2,22 @@
     { "id": 1, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png" },
     { "id": 2, "name": "Hoodie", "price": 2300, "image": "/hoodie.png" },
     { "id": 3, "name": "Plazu", "price": 2300, "image": "/plazu.png" },
-    { "id": 4, "name": "Jacket", "price": 2300, "image": "/jacket.png" }
+    { "id": 4, "name": "Jacket", "price": 2300, "image": "/jacket.png" },
+    { "id": 5, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png" },
+    { "id": 6, "name": "Hoodie", "price": 2300, "image": "/hoodie.png" },
+    { "id": 7, "name": "Plazu", "price": 2300, "image": "/plazu.png" },
+    { "id": 8, "name": "Jacket", "price": 2300, "image": "/jacket.png" },
+    { "id": 9, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png" },
+    { "id": 10, "name": "Hoodie", "price": 2300, "image": "/hoodie.png" },
+    { "id": 11, "name": "Plazu", "price": 2300, "image": "/plazu.png" },
+    { "id": 12, "name": "Jacket", "price": 2300, "image": "/jacket.png" },
+    { "id": 13, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png" },
+    { "id": 14, "name": "Hoodie", "price": 2300, "image": "/hoodie.png" },
+    { "id": 15, "name": "Plazu", "price": 2300, "image": "/plazu.png" },
+    { "id": 16, "name": "Jacket", "price": 2300, "image": "/jacket.png" },
+    { "id": 17, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png" },
+    { "id": 18, "name": "Hoodie", "price": 2300, "image": "/hoodie.png" },
+    { "id": 19, "name": "Plazu", "price": 2300, "image": "/plazu.png" },
+    { "id": 20, "name": "Jacket", "price": 2300, "image": "/jacket.png" }
   ]
   
