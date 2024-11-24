@@ -2,6 +2,7 @@
 import { useState } from "react";
 import products from "@/data/NewArrivals.json"; // Import the JSON file
 import Image from "next/image";
+import SeeMoreButton from "./SeeMoreButton";
 
 export default function ProductSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,7 +31,7 @@ export default function ProductSlider() {
                 <div
                     className="flex gap-6 transition-transform duration-500"
                     style={{
-                        transform: `translateX(-${currentIndex * 10}%)`,
+                        transform: `translateX(-${currentIndex * 100}%)`,
                     }}
                 >
                     {products.map((product) => (
@@ -78,11 +79,7 @@ export default function ProductSlider() {
             </div>
 
             {/* See More Button */}
-            <div className="mt-6 text-center">
-                <button className="px-6 py-2 text-white bg-purple-700 rounded-md">
-                    See more
-                </button>
-            </div>
+            <SeeMoreButton></SeeMoreButton>
         </div>
     );
 }

@@ -1,0 +1,22 @@
+[
+    { "id": 1, "name": "Indian Sharee", "price": 2300, "image": "/frog.png" },
+    { "id": 2, "name": "Half Sleeve Shirt", "price": 2300, "image": "/half-shirt.png" },
+    { "id": 3, "name": "Woman wearing sari", "price": 2300, "image": "/full-sharee.png" },
+    { "id": 4, "name": "Checkered shirt", "price": 2300, "image": "/check-shirt.png" },
+    { "id": 5, "name": "Indian Sharee", "price": 2300, "image": "/frog.png" },
+    { "id": 6, "name": "Half Sleeve Shirt", "price": 2300, "image": "/half-shirt.png" },
+    { "id": 7, "name": "Woman wearing sari", "price": 2300, "image": "/full-sharee.png" },
+    { "id": 8, "name": "Checkered shirt", "price": 2300, "image": "/check-shirt.png" },
+    { "id": 9, "name": "Indian Sharee", "price": 2300, "image": "/frog.png" },
+    { "id": 10, "name": "Half Sleeve Shirt", "price": 2300, "image": "/half-shirt.png" },
+    { "id": 11, "name": "Woman wearing sari", "price": 2300, "image": "/full-sharee.png" },
+    { "id": 12, "name": "Checkered shirt", "price": 2300, "image": "/check-shirt.png" },
+    { "id": 13, "name": "Indian Sharee", "price": 2300, "image": "/frog.png" },
+    { "id": 14, "name": "Half Sleeve Shirt", "price": 2300, "image": "/half-shirt.png" },
+    { "id": 15, "name": "Woman wearing sari", "price": 2300, "image": "/full-sharee.png" },
+    { "id": 16, "name": "Checkered shirt", "price": 2300, "image": "/check-shirt.png" },
+    { "id": 17, "name": "Indian Sharee", "price": 2300, "image": "/frog.png" },
+    { "id": 18, "name": "Half Sleeve Shirt", "price": 2300, "image": "/half-shirt.png" },
+    { "id": 19, "name": "Woman wearing sari", "price": 2300, "image": "/full-sharee.png" },
+    { "id": 20, "name": "Checkered shirt", "price": 2300, "image": "/check-shirt.png" }    
+]

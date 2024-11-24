@@ -4,12 +4,10 @@ import logo from '../../public/logo.png'
 
 const NavBar = () => {
     const options = <>
-        <div className='flex text-[16px] font-semibold text-[#646464]'>
             <li className='hover:text-[#581FC1]'><a>Home</a></li>
             <li className='hover:text-[#581FC1]'><a>Shop</a></li>
             <li className='hover:text-[#581FC1]'><a>Deals</a></li>
             <li className='hover:text-[#581FC1]'><a>What's New</a></li>
-        </div>
     </>
     return (
         <div className='bg-[#F5F3FF] h-[80px] flex items-center justify-center'>
@@ -32,14 +30,14 @@ const NavBar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu-sm dropdown-content bg-[#F5F3FF] z-[1] mt-3 w-52 p-2">
+                            className="menu-sm dropdown-content bg-[#F5F3FF] z-[1] mt-3 w-52 p-2 text-[16px] font-semibold text-[#646464]">
                             {options}
                         </ul>
                     </div>
                     <a className="text-xl"><Image src={logo} alt='logo'></Image></a>
                 </div>
                 <div className="hidden navbar-center lg:flex">
-                    <ul className="px-1 menu menu-horizontal">
+                    <ul className="px-1 menu menu-horizontal text-[16px] font-semibold text-[#646464]">
                         {options}
                     </ul>
                 </div>
