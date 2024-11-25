@@ -3,8 +3,11 @@ import { useState } from "react";
 import products from "@/data/NewArrivals.json"; // Import the JSON file
 import Image from "next/image";
 import SeeMoreButton from "./SeeMoreButton";
+import { useRouter } from "next/navigation";
 
 export default function ProductSlider() {
+    const router = useRouter();
+
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNext = () => {
@@ -16,6 +19,10 @@ export default function ProductSlider() {
             (prevIndex) => (prevIndex - 1 + products.length) % products.length
         );
     };
+
+    const handleProductClick = (id) => {
+        router.push(`/products/${id}`); // Navigate to the product details page
+      };
 
     return (
         <div className="relative md:max-w-[1280px] max-w-[328px] mx-auto">
@@ -35,9 +42,9 @@ export default function ProductSlider() {
                     }}
                 >
                     {products.map((product) => (
-                        <div
+                        <div onClick={() => handleProductClick(product.id)}
                             key={product.id}
-                            className="flex-shrink-0 w-[302px] bg-[#FFFFFF] h-[400px] p-2 border rounded-lg"
+                            className="flex-shrink-0 w-[302px] bg-[#FFFFFF] h-[400px] p-2 border rounded-lg cursor-pointer"
                         >
                             <div className="w-[286px] h-[287px] bg-gray-100 rounded-lg">
                                 {/* <Image
