@@ -7,7 +7,7 @@ const NavBar = () => {
             <li className='hover:text-[#581FC1]'><a>Home</a></li>
             <li className='hover:text-[#581FC1]'><a>Shop</a></li>
             <li className='hover:text-[#581FC1]'><a>Deals</a></li>
-            <li className='hover:text-[#581FC1]'><a>What's New</a></li>
+            <li className='hover:text-[#581FC1]'><a>What&apos;s New</a></li>
     </>
     return (
         <div className='bg-[#F5F3FF] h-[80px] flex items-center justify-center'>
