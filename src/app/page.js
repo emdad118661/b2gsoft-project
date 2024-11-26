@@ -1,6 +1,5 @@
 import Image from "next/image";
 import NewArraival from "@/components/NewArraival"
-
 import Banner from "@/components/Banner";
 import BigDeal from "@/components/BigDeal";
 import CollectionSlider from "@/components/CollectionSlider";

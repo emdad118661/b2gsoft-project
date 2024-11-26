@@ -18,6 +18,9 @@ module.exports = {
         pacifico: ['Pacifico', 'cursive'],
         manrope: ['Manrope', 'sans-serif']
       },
+      lineHeight: {
+        '130': '1.3', // Define a custom line-height of 130%
+      },
     },
   },
   plugins: [

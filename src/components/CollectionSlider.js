@@ -48,13 +48,13 @@ const CollectionSlider = () => {
                             <Image className='absolute bottom-[159px] md:bottom-[92px] md:w-[468px] w-[328px] md:h-[534px] h-[356.33px]' src={menCollection} alt='men-collection'></Image>
                         </div>
                         <div className='md:mt-[166px] mt-[8.67px] md:ms-0 ms-[16px] md:me-[180px]'>
-                            <h1 className='md:text-[48px] font-medium'>MEN COLLECTION</h1>
+                            <h1 className='md:text-[48px] font-semibold leading-130'>MEN COLLECTION</h1>
                             <ShopNowButton></ShopNowButton>
                         </div>
                     </div>
                     <div className='md:h-[574px] h-[459px] md:max-w-[1272px] max-w-[328px] mx-auto flex md:flex-row flex-col md:justify-between'>
                         <div className='md:mt-[166px] mt-[8.67px] md:ms-[100px] mx-[16px] md:order-1 order-2'>
-                            <h1 className='md:text-[48px] font-medium'>WOMEN COLLECTION</h1>
+                            <h1 className='md:text-[48px] font-semibold leading-130'>WOMEN COLLECTION</h1>
                             <ShopNowButton></ShopNowButton>
                         </div>
                         <div className='md:w-[621px] w-full h-[302px] bg-[#EEECFB] md:h-[481px] md:order-2 order-1'>
@@ -66,7 +66,7 @@ const CollectionSlider = () => {
                             <Image className='absolute bottom-[159px] md:bottom-[88px] md:left-[90px] md:w-[468px] w-[328px] md:h-[527px] h-[356.33px]' src={kidCollection} alt='kid-collection'></Image>
                         </div>
                         <div className='md:mt-[166px] mt-[8.67px] md:ms-0 ms-[16px] md:me-[205px]'>
-                            <h1 className='md:text-[48px] font-medium'>KID COLLECTION</h1>
+                            <h1 className='md:text-[48px] font-semibold leading-130'>KID COLLECTION</h1>
                             <ShopNowButton></ShopNowButton>
                         </div>
                     </div>
