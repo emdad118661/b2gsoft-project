@@ -61,6 +61,7 @@ async function page({ params }) {
 
                 {/* Slider */}
                 <div className='md:w-[628px] md:h-[677px] w-[328px] h-[271.07px]'>
+                {/* indicators */}
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden rounded-xl bottom-[-106.5px] left-[125.5px]  h-[142px] w-[145px]' src={product.image1} alt='image1' width={145} height={142}></Image>
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[282.5px] rounded-xl h-[142px] w-[145px]' src={product.image2} alt='image2' width={145} height={142}></Image>
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[440px] rounded-xl h-[142px] w-[145px]' src={product.image3} alt='image3' width={145} height={142}></Image>
@@ -128,6 +129,8 @@ async function page({ params }) {
 
             {/* Reviews */}
             <div className='flex md:gap-[72px] md:mt-[222px] mt-[500px] gap-4'>
+
+                {/* short nav */}
                 <p className='font-semibold md:text-[19px] text-[16px] text-[#747474]  leading-130'>Details</p>
                 <p className='font-semibold md:text-[19px] text-[16px] text-[#747474] leading-130'>Review & Rating</p>
                 <p className='font-semibold md:text-[19px] text-[16px] text-[#747474] leading-130'>Discussion</p>
@@ -179,6 +182,8 @@ async function page({ params }) {
 
                 </div>
             </div>
+
+            {/* related products */}
             <div className='md:mt-[80px] mt-[50px]'>
                 <RelatedPost></RelatedPost>
             </div>
