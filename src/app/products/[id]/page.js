@@ -50,10 +50,10 @@ async function page({ params }) {
             <div className='flex font-medium'>Feature Product / <div className='text-purple-600 ms-[3px] font-medium'>New Arrival</div></div>
             <div className='flex mt-6 gap-[24px] h-[677px]'>
                 <div className='w-[628px] h-[677px]'>
-                    <Image className='absolute bg-[#ECE9FE] rounded-lg bottom-[-109.8px] left-[125.5px]  h-[142px] w-[145px]' src={product.image1} alt='image1' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] bottom-[-109.8px] left-[282.5px] rounded-lg h-[142px] w-[145px]' src={product.image2} alt='image2' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] bottom-[-109.8px] left-[438.5px] rounded-lg h-[142px] w-[145px]' src={product.image3} alt='image3' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] bottom-[-109.8px] left-[597.5px] rounded-lg h-[142px] w-[145px]' src={product.image4} alt='image4' width={145} height={142}></Image>
+                    <Image className='absolute bg-[#ECE9FE] rounded-xl bottom-[-109.8px] left-[125.5px]  h-[142px] w-[145px]' src={product.image1} alt='image1' width={145} height={142}></Image>
+                    <Image className='absolute bg-[#ECE9FE] bottom-[-109.8px] left-[282.5px] rounded-xl h-[142px] w-[145px]' src={product.image2} alt='image2' width={145} height={142}></Image>
+                    <Image className='absolute bg-[#ECE9FE] bottom-[-109.8px] left-[440px] rounded-xl h-[142px] w-[145px]' src={product.image3} alt='image3' width={145} height={142}></Image>
+                    <Image className='absolute bg-[#ECE9FE] bottom-[-109.8px] left-[596.5px] rounded-xl h-[142px] w-[145px]' src={product.image4} alt='image4' width={145} height={142}></Image>
                     <Carousel theme={customTheme}>
                         <Image className='w-[628px] h-[519px]' src={product.image1} alt='image1' width={628} height={519}></Image>
                         <Image className='w-[628px] h-[519px]' src={product.image2} alt='image2' width={628} height={519}></Image>
