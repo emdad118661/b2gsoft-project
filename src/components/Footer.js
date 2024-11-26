@@ -69,7 +69,7 @@ const footer = () => {
                 </div>
             </div>
             {/* Bottom Bar */}
-            <div className="py-4 mt-[72px] text-center bg-purple-600">
+            <div className="py-4 mt-[88px] text-center bg-purple-600">
                 <p>© 2024 | We5ive</p>
             </div>
         </div>
