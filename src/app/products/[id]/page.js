@@ -39,7 +39,7 @@ async function page({ params }) {
             }
         },
         "control": {
-            "base": "inline-flex h-8 w-8 items-center justify-center rounded-full bg-purple-50 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 border border-purple-600 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
+            "base": "inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 border border-purple-600 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
             "icon": "hidden"
         },
         "scrollContainer": {
@@ -61,11 +61,21 @@ async function page({ params }) {
 
                 {/* Slider */}
                 <div className='md:w-[628px] md:h-[677px] w-[328px] h-[271.07px]'>
-                {/* indicators */}
+                    <svg className='absolute md:top-[370px] top-[245.5px] right-[315px] md:right-[1352px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.00002 12.0002H20" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M8.9999 7C8.9999 7 4 10.6824 4 12C4 13.3176 9 17 9 17" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+
+                    <svg className='absolute md:top-[370px] top-[245.5px] right-[51px] md:right-[795px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 12.0002H4" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M15.0001 7C15.0001 7 20 10.6824 20 12C20 13.3176 15 17 15 17" stroke="#7E53D4" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    {/* indicators */}
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden rounded-xl bottom-[-106.5px] left-[125.5px]  h-[142px] w-[145px]' src={product.image1} alt='image1' width={145} height={142}></Image>
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[282.5px] rounded-xl h-[142px] w-[145px]' src={product.image2} alt='image2' width={145} height={142}></Image>
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[440px] rounded-xl h-[142px] w-[145px]' src={product.image3} alt='image3' width={145} height={142}></Image>
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[596.5px] rounded-xl h-[142px] w-[145px]' src={product.image4} alt='image4' width={145} height={142}></Image>
+
                     <div className=''>
                         <Carousel theme={customTheme}>
                             <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image1} alt='image1' width={628} height={519}></Image>
@@ -77,7 +87,7 @@ async function page({ params }) {
                 </div>
 
                 {/* Details */}
-                <div className='md:w-[633px] md:h-[581px] md:mt-0 mt-[100px] w-full h-[509px]'>
+                <div className='md:w-[633px] md:h-[581px] md:mt-0 mt-[100px] w-[328px] h-[509px]'>
                     <div className='w-[193px] h-[40px] bg-purple-950 text-white rounded-xl flex items-center justify-center'>New Arrival</div>
                     <h1 className='text-[33px] mt-[24px] font-semibold leading-130'>{product.name}</h1>
                     <div className='mt-[15px] flex font-semibold leading-130'>
