@@ -19,7 +19,7 @@ async function page({ params }) {
 
     const customTheme = {
         "root": {
-            "base": "relative md:w-[628px] h-[519px] w-[302.93px]",
+            "base": "relative md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]",
             "leftControl": "absolute left-0 top-0 flex h-full items-center justify-center px-4 focus:outline-none",
             "rightControl": "absolute right-0 top-0 flex h-full items-center justify-center px-4 focus:outline-none"
         },
@@ -48,25 +48,11 @@ async function page({ params }) {
         }
     }
 
-    const ratingCustomTheme = {
-        "root": {
-            "base": "flex items-center"
-        },
-        "star": {
-            "empty": "text-gray-300 dark:text-gray-500",
-            "filled": "text-yellow-400",
-            "sizes": {
-                "sm": "h-5 w-5",
-                "md": "h-7 w-7",
-                "lg": "h-[40px] w-[40px]",
-                "xl": "h-[40px] w-[40px]"
-            }
-        }
-    }
+
 
 
     return (
-        <div className='md:max-w-[1280px] max-w-[328px] md:h-[1961px] h-[2286px] mx-auto'>
+        <div className='md:max-w-[1280px] max-w-[360px] mx-auto'>
             {/* page path */}
             <div className='flex font-semibold leading-130'>Feature Product / <div className='text-purple-600 ms-[3px] font-semibold leading-130'>New Arrival</div></div>
 
@@ -74,21 +60,23 @@ async function page({ params }) {
             <div className='md:flex mt-6 md:mb-[80px] md:gap-[24px] h-[520px]'>
 
                 {/* Slider */}
-                <div className='w-[628px] h-[677px]'>
-                    <Image className='absolute bg-[#ECE9FE] sm:block hidden rounded-xl bottom-[-179.5px] left-[125.5px]  h-[142px] w-[145px]' src={product.image1} alt='image1' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-179.5px] left-[282.5px] rounded-xl h-[142px] w-[145px]' src={product.image2} alt='image2' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-179.5px] left-[440px] rounded-xl h-[142px] w-[145px]' src={product.image3} alt='image3' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-179.5px] left-[596.5px] rounded-xl h-[142px] w-[145px]' src={product.image4} alt='image4' width={145} height={142}></Image>
-                    <Carousel theme={customTheme}>
-                        <Image className='w-[628px] h-[519px]' src={product.image1} alt='image1' width={628} height={519}></Image>
-                        <Image className='w-[628px] h-[519px]' src={product.image2} alt='image2' width={628} height={519}></Image>
-                        <Image className='w-[628px] h-[519px]' src={product.image3} alt='image3' width={628} height={519}></Image>
-                        <Image className='w-[628px] h-[519px]' src={product.image4} alt='image4' width={628} height={519}></Image>
-                    </Carousel>
+                <div className='md:w-[628px] md:h-[677px] w-[328px] h-[271.07px]'>
+                    <Image className='absolute bg-[#ECE9FE] sm:block hidden rounded-xl bottom-[-106.5px] left-[125.5px]  h-[142px] w-[145px]' src={product.image1} alt='image1' width={145} height={142}></Image>
+                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[282.5px] rounded-xl h-[142px] w-[145px]' src={product.image2} alt='image2' width={145} height={142}></Image>
+                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[440px] rounded-xl h-[142px] w-[145px]' src={product.image3} alt='image3' width={145} height={142}></Image>
+                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[596.5px] rounded-xl h-[142px] w-[145px]' src={product.image4} alt='image4' width={145} height={142}></Image>
+                    <div className=''>
+                        <Carousel theme={customTheme}>
+                            <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image1} alt='image1' width={628} height={519}></Image>
+                            <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image2} alt='image2' width={628} height={519}></Image>
+                            <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image3} alt='image3' width={628} height={519}></Image>
+                            <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image4} alt='image4' width={628} height={519}></Image>
+                        </Carousel>
+                    </div>
                 </div>
 
                 {/* Details */}
-                <div className='md:w-[633px] md:h-[581px] mt-0 w-full h-[509px]'>
+                <div className='md:w-[633px] md:h-[581px] md:mt-0 mt-[100px] w-full h-[509px]'>
                     <div className='w-[193px] h-[40px] bg-purple-950 text-white rounded-xl flex items-center justify-center'>New Arrival</div>
                     <h1 className='text-[33px] mt-[24px] font-semibold leading-130'>{product.name}</h1>
                     <div className='mt-[15px] flex font-semibold leading-130'>
@@ -133,19 +121,19 @@ async function page({ params }) {
                     </div>
                     <div className='md:flex gap-4 md:mt-[32px] mt-[16px]'>
                         <button className='w-[308.5px] h-[40px] rounded-lg text-white bg-purple-600'>Buy Now</button>
-                        <button className='w-[308.5px] h-[40px] rounded-lg text-purple-600 border border-purple-600'>Add to Cart</button>
+                        <button className='w-[308.5px] h-[40px] rounded-lg text-purple-600 border border-purple-600 md:mt-0 mt-4'>Add to Cart</button>
                     </div>
                 </div>
             </div>
 
             {/* Reviews */}
-            <div className='flex md:gap-[72px] gap-4'>
+            <div className='flex md:gap-[72px] md:mt-[222px] mt-[500px] gap-4'>
                 <p className='font-semibold md:text-[19px] text-[16px] text-[#747474]  leading-130'>Details</p>
                 <p className='font-semibold md:text-[19px] text-[16px] text-[#747474] leading-130'>Review & Rating</p>
                 <p className='font-semibold md:text-[19px] text-[16px] text-[#747474] leading-130'>Discussion</p>
             </div>
-            <div className='md:flex mt-[40px] md:justify-between h-[338px] w-[1280px]'>
-                <div className='w-[845px]'>
+            <div className='md:flex mt-[40px] md:justify-between md:h-[338px] md:w-[1280px]'>
+                <div className='md:w-[845px] w-[360px]'>
                     <select className="w-[121px] h-[40px] max-w-xs mb-6 bg-transparent border border-purple-600 select">
                         <option>Newest</option>
                         <option>Oldest</option>
@@ -191,7 +179,7 @@ async function page({ params }) {
 
                 </div>
             </div>
-            <div className='mt-[80px]'>
+            <div className='md:mt-[80px] mt-[50px]'>
                 <RelatedPost></RelatedPost>
             </div>
         </div>
