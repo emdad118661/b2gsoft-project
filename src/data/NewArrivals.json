@@ -1,23 +1,122 @@
 [
-    { "id": 1, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "image1": "/saree-1.png", "image2": "/saree-2.png", "image3": "/saree-3.png", "image4": "/saree-4.png"},
-    { "id": 2, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "image1": "/white-hoodie-1.png", "image2": "/black-hoodie.png", "image3": "/white-hoodie-2.png", "image4": "/white-black-hoodie.png" },
-    { "id": 3, "name": "Plazu", "price": 2300, "image": "/plazu.png", "image1": "/plazu-1.png", "image2": "/plazu-2.png", "image3": "/plazu-3.png", "image4": "/plazu-4.png" },
-    { "id": 4, "name": "Jacket", "price": 2300, "image": "/jacket.png", "image1": "/jacket-1.png", "image2": "/jacket-2.png", "image3": "/jacket-3.png", "image4": "/jacket-4.png" },
-    { "id": 5, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "image1": "/saree-1.png", "image2": "/saree-2.png", "image3": "/saree-3.png", "image4": "/saree-4.png" },
-    { "id": 6, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "image1": "/white-hoodie-1.png", "image2": "/black-hoodie.png", "image3": "/white-hoodie-2.png", "image4": "/white-black-hoodie.png" },
-    { "id": 7, "name": "Plazu", "price": 2300, "image": "/plazu.png", "image1": "/plazu-1.png", "image2": "/plazu-2.png", "image3": "/plazu-3.png", "image4": "/plazu-4.png" },
-    { "id": 8, "name": "Jacket", "price": 2300, "image": "/jacket.png", "image1": "/jacket-1.png", "image2": "/jacket-2.png", "image3": "/jacket-3.png", "image4": "/jacket-4.png" },
-    { "id": 9, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "image1": "/saree-1.png", "image2": "/saree-2.png", "image3": "/saree-3.png", "image4": "/saree-4.png" },
-    { "id": 10, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "image1": "/white-hoodie-1.png", "image2": "/black-hoodie.png", "image3": "/white-hoodie-2.png", "image4": "/white-black-hoodie.png" },
-    { "id": 11, "name": "Plazu", "price": 2300, "image": "/plazu.png", "image1": "/plazu-1.png", "image2": "/plazu-2.png", "image3": "/plazu-3.png", "image4": "/plazu-4.png" },
-    { "id": 12, "name": "Jacket", "price": 2300, "image": "/jacket.png", "image1": "/jacket-1.png", "image2": "/jacket-2.png", "image3": "/jacket-3.png", "image4": "/jacket-4.png" },
-    { "id": 13, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "image1": "/saree-1.png", "image2": "/saree-2.png", "image3": "/saree-3.png", "image4": "/saree-4.png" },
-    { "id": 14, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "image1": "/white-hoodie-1.png", "image2": "/black-hoodie.png", "image3": "/white-hoodie-2.png", "image4": "/white-black-hoodie.png" },
-    { "id": 15, "name": "Plazu", "price": 2300, "image": "/plazu.png", "image1": "/plazu-1.png", "image2": "/plazu-2.png", "image3": "/plazu-3.png", "image4": "/plazu-4.png" },
-    { "id": 16, "name": "Jacket", "price": 2300, "image": "/jacket.png", "image1": "/jacket-1.png", "image2": "/jacket-2.png", "image3": "/jacket-3.png", "image4": "/jacket-4.png" },
-    { "id": 17, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "image1": "/saree-1.png", "image2": "/saree-2.png", "image3": "/saree-3.png", "image4": "/saree-4.png" },
-    { "id": 18, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "image1": "/white-hoodie-1.png", "image2": "/black-hoodie.png", "image3": "/white-hoodie-2.png", "image4": "/white-black-hoodie.png" },
-    { "id": 19, "name": "Plazu", "price": 2300, "image": "/plazu.png", "image1": "/plazu-1.png", "image2": "/plazu-2.png", "image3": "/plazu-3.png", "image4": "/plazu-4.png" },
-    { "id": 20, "name": "Jacket", "price": 2300, "image": "/jacket.png", "image1": "/jacket-1.png", "image2": "/jacket-2.png", "image3": "/jacket-3.png", "image4": "/jacket-4.png" }
-  ]
-  
+  { "id": 1, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png","images": [
+  "/saree-1.png",
+  "/saree-2.png",
+  "/saree-3.png",
+  "/saree-4.png"
+]},
+  { "id": 2, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "images": [
+  "/white-hoodie-1.png",
+  "/black-hoodie.png",
+  "/white-hoodie-2.png",
+  "/white-black-hoodie.png"
+] },
+  { "id": 3, "name": "Plazu", "price": 2300, "image": "/plazu.png", "images": [
+  "/plazu-1.png",
+  "/plazu-2.png",
+  "/plazu-3.png",
+  "/plazu-4.png"
+]  },
+  { "id": 4, "name": "Jacket", "price": 2300, "image": "/jacket.png", "images": [
+  "/jacket-1.png",
+  "/jacket-2.png",
+  "/jacket-3.png",
+  "/jacket-4.png"
+] },
+  { "id": 5, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "images": [
+  "/saree-1.png",
+  "/saree-2.png",
+  "/saree-3.png",
+  "/saree-4.png"
+] },
+  { "id": 6, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "images": [
+  "/white-hoodie-1.png",
+  "/black-hoodie.png",
+  "/white-hoodie-2.png",
+  "/white-black-hoodie.png"
+]},
+  { "id": 7, "name": "Plazu", "price": 2300, "image": "/plazu.png", "images": [
+  "/plazu-1.png",
+  "/plazu-2.png",
+  "/plazu-3.png",
+  "/plazu-4.png"
+] },
+  { "id": 8, "name": "Jacket", "price": 2300, "image": "/jacket.png", "images": [
+  "/jacket-1.png",
+  "/jacket-2.png",
+  "/jacket-3.png",
+  "/jacket-4.png"
+]  },
+  { "id": 9, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "images": [
+  "/saree-1.png",
+  "/saree-2.png",
+  "/saree-3.png",
+  "/saree-4.png"
+] },
+  { "id": 10, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "images": [
+  "/white-hoodie-1.png",
+  "/black-hoodie.png",
+  "/white-hoodie-2.png",
+  "/white-black-hoodie.png"
+]  },
+  { "id": 11, "name": "Plazu", "price": 2300, "image": "/plazu.png", "images": [
+  "/plazu-1.png",
+  "/plazu-2.png",
+  "/plazu-3.png",
+  "/plazu-4.png"
+] },
+  { "id": 12, "name": "Jacket", "price": 2300, "image": "/jacket.png", "images": [
+  "/jacket-1.png",
+  "/jacket-2.png",
+  "/jacket-3.png",
+  "/jacket-4.png"
+]  },
+  { "id": 13, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "images": [
+  "/saree-1.png",
+  "/saree-2.png",
+  "/saree-3.png",
+  "/saree-4.png"
+] },
+  { "id": 14, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "images": [
+  "/white-hoodie-1.png",
+  "/black-hoodie.png",
+  "/white-hoodie-2.png",
+  "/white-black-hoodie.png"
+]  },
+  { "id": 15, "name": "Plazu", "price": 2300, "image": "/plazu.png", "images": [
+  "/plazu-1.png",
+  "/plazu-2.png",
+  "/plazu-3.png",
+  "/plazu-4.png"
+]},
+  { "id": 16, "name": "Jacket", "price": 2300, "image": "/jacket.png", "images": [
+  "/jacket-1.png",
+  "/jacket-2.png",
+  "/jacket-3.png",
+  "/jacket-4.png"
+] },
+  { "id": 17, "name": "Indian Sharee", "price": 2300, "image": "/sharee.png", "images": [
+  "/saree-1.png",
+  "/saree-2.png",
+  "/saree-3.png",
+  "/saree-4.png"
+] },
+  { "id": 18, "name": "Hoodie", "price": 2300, "image": "/hoodie.png", "images": [
+  "/white-hoodie-1.png",
+  "/black-hoodie.png",
+  "/white-hoodie-2.png",
+  "/white-black-hoodie.png"
+]  },
+  { "id": 19, "name": "Plazu", "price": 2300, "image": "/plazu.png", "images": [
+  "/plazu-1.png",
+  "/plazu-2.png",
+  "/plazu-3.png",
+  "/plazu-4.png"
+]},
+  { "id": 20, "name": "Jacket", "price": 2300, "image": "/jacket.png", "images": [
+  "/jacket-1.png",
+  "/jacket-2.png",
+  "/jacket-3.png",
+  "/jacket-4.png"
+]  }
+]

@@ -1,4 +1,7 @@
-import React from 'react';
+'use client'; // Marks this file as a Client Component
+
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation'; // Correct import for dynamic routing
 import products from "@/data/NewArrivals.json";
 import Image from 'next/image';
 import { Carousel, Rating, RatingStar, RatingAdvanced } from "flowbite-react";
@@ -6,12 +9,21 @@ import QuantityInput from '@/components/QuantityInput';
 import SeeMoreButton from '@/components/SeeMoreButton';
 import RelatedPost from '@/components/RelatedPost';
 import Reviews from '@/components/Reviews';
+import ImageCarousel from '@/components/ImageCarousel';
 
-async function page({ params }) {
-    const { id } = await params;
+const Page =({})=> {
+    
+    const { id } = useParams(); // Retrieves the dynamic ID from the route
+    const [product, setProduct] = useState(null);
 
-    // Find the product with the matching ID
-    const product = products.find((product) => product.id === parseInt(id));
+    useEffect(() => {
+        if (id) {
+            const productData = products.find((product) => product.id === parseInt(id, 10)); // Ensure ID is an integer
+            if (productData) {
+                setProduct(productData);
+            }
+        }
+    }, [id]);
 
     if (!product) {
         return <div>Product not found!</div>;
@@ -60,8 +72,9 @@ async function page({ params }) {
             <div className='md:flex mt-6 md:mb-[80px] md:gap-[24px] h-[520px]'>
 
                 {/* Slider */}
-                <div className='md:w-[628px] md:h-[677px] w-[328px] h-[271.07px]'>
-                    <svg className='absolute md:top-[370px] top-[245.5px] right-[315px] md:right-[1352px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <div className='md:w-[628px] md:h-[677px] w-[328px] h-[271.07px]'>
+                    <ImageCarousel images={product?.images || []}></ImageCarousel>
+                    {/* <svg className='absolute md:top-[370px] top-[245.5px] right-[315px] md:right-[1352px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.00002 12.0002H20" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M8.9999 7C8.9999 7 4 10.6824 4 12C4 13.3176 9 17 9 17" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
@@ -70,7 +83,7 @@ async function page({ params }) {
                         <path d="M20 12.0002H4" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M15.0001 7C15.0001 7 20 10.6824 20 12C20 13.3176 15 17 15 17" stroke="#7E53D4" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                    {/* indicators */}
+                    
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden rounded-xl bottom-[-106.5px] left-[125.5px]  h-[142px] w-[145px]' src={product.image1} alt='image1' width={145} height={142}></Image>
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[282.5px] rounded-xl h-[142px] w-[145px]' src={product.image2} alt='image2' width={145} height={142}></Image>
                     <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[440px] rounded-xl h-[142px] w-[145px]' src={product.image3} alt='image3' width={145} height={142}></Image>
@@ -83,11 +96,11 @@ async function page({ params }) {
                             <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image3} alt='image3' width={628} height={519}></Image>
                             <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image4} alt='image4' width={628} height={519}></Image>
                         </Carousel>
-                    </div>
-                </div>
+                    </div> */}
+                </div> 
 
                 {/* Details */}
-                <div className='md:w-[633px] md:h-[581px] md:mt-0 mt-[100px] w-[328px] h-[509px]'>
+                <div className='md:w-[633px] md:h-[581px] md:mt-0 mt-[200px] w-[328px] h-[509px]'>
                     <div className='w-[193px] h-[40px] bg-purple-950 text-white rounded-xl flex items-center justify-center'>New Arrival</div>
                     <h1 className='text-[33px] mt-[24px] font-semibold leading-130'>{product.name}</h1>
                     <div className='mt-[15px] flex font-semibold leading-130'>
@@ -201,4 +214,4 @@ async function page({ params }) {
     );
 };
 
-export default page;
+export default Page;
