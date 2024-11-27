@@ -151,7 +151,7 @@ const Page =({})=> {
             </div>
 
             {/* Reviews */}
-            <div className='flex md:gap-[72px] md:mt-[222px] mt-[500px] gap-4'>
+            <div className='flex md:gap-[72px] md:mt-[222px] mt-[550px] gap-4'>
 
                 {/* short nav */}
                 <p className='font-semibold md:text-[19px] text-[16px] text-[#747474]  leading-130'>Details</p>
