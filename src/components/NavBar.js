@@ -3,6 +3,8 @@ import React from 'react';
 import logo from '../../public/logo.png'
 
 const NavBar = () => {
+
+    // navbar options
     const options = <>
             <li className='hover:text-[#581FC1]'><a>Home</a></li>
             <li className='hover:text-[#581FC1]'><a>Shop</a></li>
@@ -12,6 +14,8 @@ const NavBar = () => {
     return (
         <div className='bg-[#F5F3FF] h-[80px] flex items-center justify-center'>
             <div className="navbar hover hover:bg-none max-w-[1280px] mx-auto">
+
+                {/* for small device */}
                 <div className="navbar-start">
                     <div className="dropdown hover:bg-none">
                         <div tabIndex={0} role="button" className="btn lg:hidden">
@@ -36,6 +40,8 @@ const NavBar = () => {
                     </div>
                     <a className="text-xl"><Image src={logo} alt='logo'></Image></a>
                 </div>
+
+                {/* for large device */}
                 <div className="hidden navbar-center lg:flex">
                     <ul className="px-1 menu menu-horizontal text-[16px] font-semibold text-[#646464]">
                         {options}

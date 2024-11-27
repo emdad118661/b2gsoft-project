@@ -3,6 +3,8 @@ import React from 'react';
 
 
 const QuantityInput = () => {
+
+    // after clicking quantity will decrease by 1
     const handleDecrease = () => {
         const quantityElement = document.getElementById("quantity"); // Get the div element
         let quantity = parseInt(quantityElement.innerText, 10); // Parse the value as an integer
@@ -13,6 +15,7 @@ const QuantityInput = () => {
         }
     };
 
+    // after clicking quantity will increase by 1
     const handleIncrease = () => {
         const quantityElement = document.getElementById("quantity"); // Get the div element
         let quantity = parseInt(quantityElement.innerText, 10); // Parse the value as an integer
@@ -23,13 +26,17 @@ const QuantityInput = () => {
         }
     };
     return (
+        // minus button
         <div className='w-[132px] h-[48px] gap-[30.5px] rounded-3xl bg-[#ECE9FE] flex justify-center items-center'>
             <button className='cursor-pointer' onClick={handleDecrease}>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.3332 8H2.6665" stroke="#1D1D1D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
             </button>
+            {/* showing quantity */}
             <div id="quantity">1</div>
+
+            {/* plus button */}
             <button className='cursor-pointer' onClick={handleIncrease}>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 2.66669V13.3334" stroke="#1D1D1D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

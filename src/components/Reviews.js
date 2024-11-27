@@ -6,8 +6,10 @@ const Reviews = () => {
     return (
         <div>
             <div className='flex gap-[13px]'>
+                {/* DP of reviewer */}
                 <Image className='w-[40px] h-[40px]' src={dp} alt='dp'></Image>
                 <div>
+                    {/* name and time of review */}
                     <div className='flex'>
                         <p className='text-[16px] font-semibold font-manrope leading-[130%]'>Cameron Williamvvvson</p>
                         <p className='text-[13px] font-manrope flex justify-center items-center ms-2 text-[#656565] leading-[130%]'>3 days</p>
@@ -22,7 +24,11 @@ const Reviews = () => {
                 </div>
 
             </div>
+
+            {/* main comment */}
             <p className='mt-[15px] text-[16px] font-manrope font-bold leading-[130%]'>Very Nice!!</p>
+
+            {/* likes */}
             <div className='mt-[15px] flex'>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.3335 8.33333C1.3335 7.59693 1.93045 7 2.66683 7C3.7714 7 4.66683 7.8954 4.66683 9V11.6667C4.66683 12.7713 3.7714 13.6667 2.66683 13.6667C1.93045 13.6667 1.3335 13.0697 1.3335 12.3333V8.33333Z" stroke="#1D1D1D" strokeLinecap="round" strokeLinejoin="round" />

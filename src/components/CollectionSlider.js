@@ -7,6 +7,7 @@ import menCollection from '../../public/model-wearing-jeans-clothes-sunglasses.p
 import kidCollection from '../../public/image 14.png'
 import womenCollection from '../../public/image 1.png'
 
+//slider custom theme data
 const customTheme = {
     "root": {
         "base": "relative h-full w-full",
@@ -42,7 +43,10 @@ const CollectionSlider = () => {
     return (
         <div className='relative mb-[80px]'>
             <div className="md:mt-[91px] mt-[31px] h-[614px] sm:h-[459px] xl:h-[614px] 2xl:h-[614px]">
+                {/* main carousel */}
                 <Carousel theme={customTheme}>
+
+                    {/* men collection */}
                     <div className='md:h-[574px] h-[459px] md:max-w-[1272px] max-w-[328px] mx-auto md:flex md:justify-between'>
                         <div className='md:w-[621px] w-full h-[302px] bg-[#EEECFB] md:h-[481px]'>
                             <Image className='absolute bottom-[159px] md:bottom-[92px] md:w-[468px] w-[328px] md:h-[534px] h-[356.33px]' src={menCollection} alt='men-collection'></Image>
@@ -52,6 +56,8 @@ const CollectionSlider = () => {
                             <ShopNowButton></ShopNowButton>
                         </div>
                     </div>
+
+                    {/* women collection */}
                     <div className='md:h-[574px] h-[459px] md:max-w-[1272px] max-w-[328px] mx-auto flex md:flex-row flex-col md:justify-between'>
                         <div className='md:mt-[166px] mt-[8.67px] md:ms-[100px] mx-[16px] md:order-1 order-2'>
                             <h1 className='md:text-[48px] font-semibold leading-130'>WOMEN COLLECTION</h1>
@@ -61,6 +67,8 @@ const CollectionSlider = () => {
                             <Image className='absolute md:bottom-[94px] bottom-[159px] md:right-[150px] right-[30px] md:w-[341px] w-[250px]  md:h-[525px] h-[356.33px]' src={womenCollection} alt='kid-collection'></Image>
                         </div>
                     </div>
+
+                    {/* kid collection */}
                     <div className='md:h-[574px] h-[459px] md:max-w-[1272px] max-w-[328px] mx-auto md:flex md:justify-between'>
                         <div className='md:w-[621px] w-full h-[302px] bg-[#EEECFB] md:h-[481px]'>
                             <Image className='absolute bottom-[159px] md:bottom-[88px] md:left-[90px] md:w-[468px] w-[328px] md:h-[527px] h-[356.33px]' src={kidCollection} alt='kid-collection'></Image>

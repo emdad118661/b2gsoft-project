@@ -3,7 +3,10 @@ import React from 'react';
 const ShopNowButton = () => {
     return (
         <div className='flex text-white'>
+            {/* main button */}
             <button className='bg-[#8F71E1] w-[149px] h-[48px] text-[19px] rounded-3xl'>Shop Now</button>
+
+            {/* arrow icon part */}
             <div className='w-[48px] h-[48px] rounded-full bg-[#8F71E1]'>
                 <svg className='mt-3 ms-3' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 7L6 18" stroke="white" strokeWidth="1.5" strokeLinecap="round" />

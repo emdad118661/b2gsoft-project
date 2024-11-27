@@ -40,13 +40,6 @@ export default function ProductSlider() {
                             className="flex-shrink-0 w-[302px] bg-[#FFFFFF] h-[400px] p-2 border rounded-lg"
                         >
                             <div className="w-[286px] h-[252px] bg-gray-100 rounded-lg">
-                                {/* <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={286}
-                  height={287}
-                  className="object-cover h-48 rounded-md"
-                /> */}
                                 <Image src={product.image} alt={product.name} width={286} height={252} className="object-cover object-center w-full rounded-md"></Image>
                             </div>
                             <svg className="mt-4" width="180" height="19" viewBox="0 0 180 19" fill="none" xmlns="http://www.w3.org/2000/svg">

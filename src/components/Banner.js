@@ -5,6 +5,8 @@ import optionbgimage from "../../public/option.png"
 import ShopNowButton from './ShopNowButton';
 
 const Banner = () => {
+
+    // Data of Bottom dark puple line image ovarley
     const optionContents = [
         { "id": 1, "heading": "FREE SHIPPING", "description": "BUY BDT 3000+ & GET FREE DELIVERY", "icon": "/truck-delivery.png" },
         { "id": 2, "heading": "7 DAYS EXCHANGE", "description": "EXCHANGE WITHIN 7 DAYS WITH SIMILAR TYPE OF PRODUCTS", "icon": "/exchange.png" },
@@ -12,6 +14,7 @@ const Banner = () => {
     ]
     return (
         <div className='md:mb-[47px] mb-[66px]'>
+            {/* Top image Ovarley section */}
             <div className='relative'>
                 <Image className='md:h-[500px] h-[350px] w-full object-cover object-center' src={banner} alt='banner'></Image>
 
@@ -25,6 +28,8 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Bottom image overley section */}
             <div className='relative'>
                 <Image className='w-full md:h-[82px] h-[236px] object-cover object-center' src={optionbgimage} alt='option'></Image>
                 <div className='bg-[#6441C2] w-full md:h-[82px] h-[236px] bg-opacity-[90%] absolute inset-0 flex'>

@@ -29,40 +29,6 @@ const Page =({})=> {
         return <div>Product not found!</div>;
     }
 
-    const customTheme = {
-        "root": {
-            "base": "relative md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]",
-            "leftControl": "absolute left-0 top-0 flex h-full items-center justify-center px-4 focus:outline-none",
-            "rightControl": "absolute right-0 top-0 flex h-full items-center justify-center px-4 focus:outline-none"
-        },
-        "indicators": {
-            "active": {
-                "off": "bg-transparent",
-                "on": "bg-white dark:bg-gray-800 opacity-[50%]"
-            },
-            "base": "h-[142px] w-[145px] rounded-xl sm:block hidden",
-            "wrapper": "absolute bottom-[-158px] left-1/2 flex -translate-x-1/2 space-x-3"
-        },
-        "item": {
-            "base": "absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
-            "wrapper": {
-                "off": "w-full flex-shrink-0 transform cursor-default snap-center",
-                "on": "w-full flex-shrink-0 transform cursor-grab snap-center"
-            }
-        },
-        "control": {
-            "base": "inline-flex h-8 w-8 items-center justify-center rounded-full bg-transparent group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 border border-purple-600 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10",
-            "icon": "hidden"
-        },
-        "scrollContainer": {
-            "base": "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-lg",
-            "snap": "snap-x"
-        }
-    }
-
-
-
-
     return (
         <div className='md:max-w-[1280px] max-w-[360px] mx-auto'>
             {/* page path */}
@@ -74,35 +40,13 @@ const Page =({})=> {
                 {/* Slider */}
                  <div className='md:w-[628px] md:h-[677px] w-[328px] h-[271.07px]'>
                     <ImageCarousel images={product?.images || []}></ImageCarousel>
-                    {/* <svg className='absolute md:top-[370px] top-[245.5px] right-[315px] md:right-[1352px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.00002 12.0002H20" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M8.9999 7C8.9999 7 4 10.6824 4 12C4 13.3176 9 17 9 17" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-
-                    <svg className='absolute md:top-[370px] top-[245.5px] right-[51px] md:right-[795px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 12.0002H4" stroke="#7E53D4" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M15.0001 7C15.0001 7 20 10.6824 20 12C20 13.3176 15 17 15 17" stroke="#7E53D4" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    
-                    <Image className='absolute bg-[#ECE9FE] sm:block hidden rounded-xl bottom-[-106.5px] left-[125.5px]  h-[142px] w-[145px]' src={product.image1} alt='image1' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[282.5px] rounded-xl h-[142px] w-[145px]' src={product.image2} alt='image2' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[440px] rounded-xl h-[142px] w-[145px]' src={product.image3} alt='image3' width={145} height={142}></Image>
-                    <Image className='absolute bg-[#ECE9FE] sm:block hidden bottom-[-106.5px] left-[596.5px] rounded-xl h-[142px] w-[145px]' src={product.image4} alt='image4' width={145} height={142}></Image>
-
-                    <div className=''>
-                        <Carousel theme={customTheme}>
-                            <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image1} alt='image1' width={628} height={519}></Image>
-                            <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image2} alt='image2' width={628} height={519}></Image>
-                            <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image3} alt='image3' width={628} height={519}></Image>
-                            <Image className='md:w-[628px] h-[271.07px] w-[328px] md:h-[519px]' src={product.image4} alt='image4' width={628} height={519}></Image>
-                        </Carousel>
-                    </div> */}
                 </div> 
 
                 {/* Details */}
                 <div className='md:w-[633px] md:h-[581px] md:mt-0 mt-[200px] w-[328px] h-[509px]'>
                     <div className='w-[193px] h-[40px] bg-purple-950 text-white rounded-xl flex items-center justify-center'>New Arrival</div>
                     <h1 className='text-[33px] mt-[24px] font-semibold leading-130'>{product.name}</h1>
+                    {/* Rating */}
                     <div className='mt-[15px] flex font-semibold leading-130'>
                         <Rating>
                             <RatingStar />
@@ -137,12 +81,16 @@ const Page =({})=> {
                         </div>
                     </div>
                     <hr />
+
+                    {/* Quantity Plus Minus Input */}
                     <div className='mt-[24px]'>
                         <h1 className='text-[16px] font-semibold'>Quantity</h1>
                         <div className='mt-[16px]'>
                             <QuantityInput></QuantityInput>
                         </div>
                     </div>
+
+                    {/* Buy now & add to cart flex */}
                     <div className='md:flex gap-4 md:mt-[32px] mt-[16px]'>
                         <button className='w-[308.5px] h-[40px] rounded-lg text-white bg-purple-600'>Buy Now</button>
                         <button className='w-[308.5px] h-[40px] rounded-lg text-purple-600 border border-purple-600 md:mt-0 mt-4'>Add to Cart</button>
@@ -151,7 +99,7 @@ const Page =({})=> {
             </div>
 
             {/* Reviews */}
-            <div className='flex md:gap-[72px] md:mt-[222px] mt-[550px] gap-4'>
+            <div className='flex md:gap-[72px] md:mt-[222px] mt-[570px] gap-4'>
 
                 {/* short nav */}
                 <p className='font-semibold md:text-[19px] text-[16px] text-[#747474]  leading-130'>Details</p>

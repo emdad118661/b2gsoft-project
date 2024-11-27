@@ -10,6 +10,7 @@ const footer = () => {
     return (
         <div className='mt-[108px] w-full md:h-[491px] h-[850px] text-white bg-black'>
             <div className='md:max-w-[1280px] max-w-[328px] mx-auto'>
+                {/* Logo Description Email sign up  */}
                 <div className='md:pt-[55px] pt-[24px] md:grid md:grid-cols-2 md:gap-[241px]'>
                     <div>
                         <div className="flex items-center gap-2 mb-4">
@@ -39,6 +40,8 @@ const footer = () => {
                         </form>
                     </div>
                 </div>
+
+                {/* Contact, About, Privacy, Social media */}
                 <div className='md:pt-[67px] pt-4 md:grid md:grid-cols-4 md:gap-[147px]'>
                     <div>
                         <h3 className="mb-2 text-lg font-semibold">Contact Us</h3>
@@ -68,6 +71,7 @@ const footer = () => {
                     </div>
                 </div>
             </div>
+            
             {/* Bottom Bar */}
             <div className="py-4 mt-[88px] text-center bg-purple-600">
                 <p>© 2024 | We5ive</p>
