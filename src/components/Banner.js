@@ -19,7 +19,7 @@ const Banner = () => {
                 <Image className='md:h-[500px] h-[350px] w-full object-cover object-center' src={banner} alt='banner'></Image>
 
                 <div className='bg-[#111111] md:h-[500px] h-[350px] w-full  bg-opacity-[50%] absolute inset-0 flex'>
-                    <div className='md:w-[635px] w-[328px] md:h-[167px] h-[127px] text-white absolute md:left-[440px] left-[18%] md:top-[166px] top-[111px]'>
+                    <div className='md:w-[635px] w-[328px] md:h-[167px] h-[127px] text-white absolute md:left-[440px] left-[15%] md:top-[166px] top-[111px]'>
                         <h3 className='md:text-[48px] text-2xl font-medium leading-130 md:h-[62px] h-[30px]'>Elevate Your Everyday Style</h3>
                         <p className='text-center md:text-[19px] md:me-0 me-6'>Discover the Latest Trends in Sustainable Fashion</p>
                         <div className='mt-[24px] md:ms-[219px] ms-[65.5px]'>
