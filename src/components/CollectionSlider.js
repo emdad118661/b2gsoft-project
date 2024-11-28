@@ -41,7 +41,7 @@ const customTheme = {
 
 const CollectionSlider = () => {
     return (
-        <div className='relative mb-[80px]'>
+        <div id='shop' className='relative mb-[80px]'>
             <div className="md:mt-[91px] mt-[31px] h-[614px] sm:h-[459px] xl:h-[614px] 2xl:h-[614px]">
                 {/* main carousel */}
                 <Carousel theme={customTheme}>

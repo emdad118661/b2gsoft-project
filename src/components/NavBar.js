@@ -1,15 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
 import logo from '../../public/logo.png'
+import Link from 'next/link';
+
 
 const NavBar = () => {
 
     // navbar options
     const options = <>
-            <li className='hover:text-[#581FC1]'><a>Home</a></li>
-            <li className='hover:text-[#581FC1]'><a>Shop</a></li>
-            <li className='hover:text-[#581FC1]'><a>Deals</a></li>
-            <li className='hover:text-[#581FC1]'><a>What&apos;s New</a></li>
+            <li className='hover:text-[#581FC1]'><Link href="/">Home</Link></li>
+            <li className='hover:text-[#581FC1]'><Link href="#shop">Shop</Link></li>
+            <li className='hover:text-[#581FC1]'><Link href="#deal">Deals</Link></li>
+            <li className='hover:text-[#581FC1]'><Link href="#new">What&apos;s New</Link></li>
     </>
     return (
         <div className='bg-[#F5F3FF] h-[80px] flex items-center justify-center'>
