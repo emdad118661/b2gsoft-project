@@ -47,7 +47,7 @@ const RelatedPost = () => {
                             key={product.id}
                             className="flex-shrink-0 w-[302px] bg-[#FFFFFF] h-[400px] p-2 border rounded-lg cursor-pointer"
                         >
-                            <div className="w-[286px] h-[287px] bg-gray-100 rounded-lg">
+                            <div className="w-[286px] h-[287px] bg-[#F6F5FD] rounded-lg">
                                 <Image src={product.image} alt={product.name} width={286} height={287} className="object-cover w-full rounded-md"></Image>
                             </div>
                             <div className="flex justify-between h-[25px] my-4">
