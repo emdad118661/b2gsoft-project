@@ -79,6 +79,7 @@ const ImageCarousel = ({ images = [] }) => {
                         } rounded-md overflow-hidden`}
                     >
                         <Image
+                        className='mt-6'
                             src={image}
                             alt={`Thumbnail ${index + 1}`}
                             width={144}
