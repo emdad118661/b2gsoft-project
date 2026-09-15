@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import banner from './images/hero.png';
 import optionbgimage from "../../public/option.png"
 import ShopNowButton from './ShopNowButton';
 
@@ -15,8 +14,13 @@ const Banner = () => {
     return (
         <div className='md:mb-[47px] mb-[66px]'>
             {/* Top image Ovarley section */}
-            <div className='relative'>
-                <Image className='md:h-[500px] h-[350px] w-full object-cover object-center' src={banner} alt='banner'></Image>
+            <div className='relative md:h-[500px] h-[350px] w-full'>
+                 <Image 
+                    src="/hero.png" 
+                    alt='banner' 
+                    fill
+                    className='object-cover object-center' 
+                />
 
                 <div className='bg-[#111111] md:h-[500px] h-[350px] w-full bg-opacity-[50%] absolute inset-0 flex items-center justify-center'>
                     <div className='md:w-[635px] w-[328px] text-white text-center flex flex-col items-center'>
