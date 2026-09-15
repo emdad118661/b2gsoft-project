@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import banner from "../../public/hero.png"
+import banner from '../../public/hero.png';
 import optionbgimage from "../../public/option.png"
 import ShopNowButton from './ShopNowButton';
 
